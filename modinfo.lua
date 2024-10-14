@@ -16,31 +16,40 @@ end
 ---                   第二位为大版本号，进行主题更新、大DLC发布的时候进行增量。
 ---                   第一位暂时预留。 
 ----------------------------------------------------------------------------
-local the_version = "0.00.00.000001"
+local the_version = "0.01.00.000001"
 
 
 
+local function Check_Mod_is_Internal_Version()
+  if folder_name and (folder_name == "DST_MOD_botanical_cube") then
+      return true
+  end
+  return false
+end
 
 local function GetName()
   ----------------------------------------------------------------------------
   ---- 参数表： loc.lua 里面的localizations 表，code 为 这里用的index
   local temp_table = {
-      "botanical_cube",                               ----- 默认情况下(英文)
+      "DST_MOD_botanical_cube",                               ----- 默认情况下(英文)
       ["zh"] = "植物魔方",                                 ----- 中文
   }
 
   local temp_table_internal = {
-    "botanical_cube (BETA)",                               ----- 默认情况下(英文)
+    "DST_MOD_botanical_cube (BETA)",                               ----- 默认情况下(英文)
     ["zh"] = "植物魔方(BETA)",                                 ----- 中文
   }
 
-
+  if Check_Mod_is_Internal_Version() then
+    return ChooseTranslationTable_Test(temp_table_internal)
+  end
+  return ChooseTranslationTable_Test(temp_table)
 end
 
 local function GetDesc()
     local temp_table = {
       [[
-        Large amount of content
+        111
       ]],
       ["zh"] = [[
         1111
@@ -125,7 +134,18 @@ configuration_options =
         },
         default = "auto",
     },
-    
+    {
+        name = "DEBUGGING_MOD",
+        label = Check_Mod_is_Internal_Version() and "开发者模式" or "",
+        hover = Check_Mod_is_Internal_Version() and "开发者模式" or "",
+        options = Check_Mod_is_Internal_Version() and 
+        {
+          {description = IsChinese() and "关" or "OFF", data = false},
+          {description = IsChinese() and "开" or "ON", data = true},
+        } or  {{description = "", data = false}},
+        default = false,
+    },
+
 ----------------------------------------------------------------------------------------------------------
 
   
