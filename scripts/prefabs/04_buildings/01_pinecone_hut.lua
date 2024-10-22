@@ -11,8 +11,9 @@ local assets =
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 --- workable
+
     local function OnFinishCallback(inst,worker)
-        
+        inst.components.lootdropper:DropLoot()
         local fx = SpawnPrefab("collapse_small") -- 烟雾小的那个
         fx.Transform:SetPosition(inst.Transform:GetWorldPosition())
         inst:Remove()
@@ -20,9 +21,13 @@ local assets =
     local function workable_install(inst)
         inst:AddComponent("workable")
         inst.components.workable:SetWorkAction(ACTIONS.DIG) -- 是松果做的用铲子挖掘就行了
-        inst.components.workable:SetWorkLeft(1)
-        -- inst.components.workable:SetOnWorkCallback(onhit)
+
+        inst.components.workable:SetWorkLeft(6)
+
         inst.components.workable:SetOnFinishCallback(OnFinishCallback)
+
+
+
         local old_WorkedBy = inst.components.workable.WorkedBy
         inst.components.workable.WorkedBy = function(self,worker, numworks,...)
             if worker and worker:HasTag("player") then
@@ -170,6 +175,12 @@ local function fn()
     -----------------------------------------------------------
     --- 官方的workable
         workable_install(inst)
+        inst:ListenForEvent("onbuilt",function()  -- 玩家刚刚建立的时候 可以用来播放动画和声音
+            -- inst.SoundEmitter:PlaySound("dontstarve/common/chest_trap")
+            inst.AnimState:PlayAnimation("place")
+            -- inst.AnimState:PushAnimation("idle",true)
+        
+        end)
     -----------------------------------------------------------
     --- 官方的睡袋系统
         sleepingbag_install(inst)

@@ -4,7 +4,7 @@
 AddRecipeToFilter("botanical_cube_building_pinecone_hut","STRUCTURES")     ---- 添加物品到目标标签
 AddRecipe2(
     "botanical_cube_building_pinecone_hut",            --  --  inst.prefab  实体名字
-    { Ingredient("pinecone", 10),Ingredient("rope", 2) }, 
+    { Ingredient("pinecone", 99),Ingredient("rope", 4),Ingredient("boards", 4) }, 
     TECH.SCIENCE_TWO, --- TECH.二本科技
     {
         -- nounlock=true,
