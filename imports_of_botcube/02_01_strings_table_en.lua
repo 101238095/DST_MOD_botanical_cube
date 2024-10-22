@@ -20,6 +20,24 @@ local strings = {
         --     ["inspect_str"] = "Used for breaking through from the Prenatal Stage to the Foundation Establishment Stage.",
         --     ["recipe_desc"] = "Used for breaking through from the Prenatal Stage to the Foundation Establishment Stage.",
         -- },
+    --------------------------------------------------------------------
+    --- 04_buildings
+    ["botanical_cube_building_pinecone_hut"] = {
+        ["name"] = "pinecone hut",
+        ["inspect_str"] = "Cabin made of pine cones",
+        ["recipe_desc"] = "We can sleep in it",
+    },
+
+
+
+
+
+
+
+
+
+
+
     }
 
 TUNING.BOTCUBE_GET_STRINGS = function(prefab_name1,prefab_name2)

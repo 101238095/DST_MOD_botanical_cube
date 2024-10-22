@@ -15,6 +15,8 @@ local files_name = {
 	---- 06_buildings
 		-- "bogd_building_treasure_table",										--- 灵宝台
 	-------------------------------------------------------------------------------------------------
+	-- 04_buildings
+		"botanical_cube_building_pinecone_hut"						--- 松果小屋
 
 		
 

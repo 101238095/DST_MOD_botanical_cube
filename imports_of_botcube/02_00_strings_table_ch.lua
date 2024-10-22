@@ -22,6 +22,12 @@ local strings = {
         -- },
 
     --------------------------------------------------------------------
+    --- 04_buildings
+    ["botanical_cube_building_pinecone_hut"] = {
+            ["name"] = "松果小屋",
+            ["inspect_str"] = "松果制作而成的小屋",
+            ["recipe_desc"] = "可以在这个小屋里面睡觉",
+        },
 }
 
 TUNING.BOTCUBE_GET_STRINGS = function(prefab_name1,prefab_name2)
