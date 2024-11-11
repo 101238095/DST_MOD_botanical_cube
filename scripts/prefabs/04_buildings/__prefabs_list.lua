@@ -26,8 +26,24 @@ local Prefabs_addr_base = string.sub(temp_addr,1,temp_str_index2) .. "/"    --- 
 ---------------------------------------------------------------------------
 -- local Prefabs_addr_base = "scripts/prefabs/01_bogd_items/"               --- 文件夹路径
 local prefabs_name_list = {
-    "01_pinecone_hut"
-
+    "01_pinecone_hut",
+    "02_caladium",--彩叶芋
+    "03_bromeliad",--积水凤梨
+    "04_paling",--篱笆
+    "05_archway",--拱门
+    "06_flowers",--花球
+    "07_arrowroot",--竹芋
+    "08_hanging_plant",--仙洞垂吊
+    "09_monstera_hole",
+    "10_happy_leaf",
+    "11_cissusdiscolor",--锦叶葡萄
+    "12_monstera",--龟背竹
+    "13_platycerium",--鹿角蕨
+    "14_rocking_chair",--摇摇椅
+    "15_show_shelf",--展示架
+    "16_begonia",--秋海棠
+    "17_leaf_carpet",--叶片地毯
+    "18_myster_carpet",--神秘地毯
 }
 
 

@@ -16,7 +16,29 @@ local files_name = {
 		-- "bogd_building_treasure_table",										--- 灵宝台
 	-------------------------------------------------------------------------------------------------
 	-- 04_buildings
-		"botanical_cube_building_pinecone_hut"						--- 松果小屋
+		"botanical_cube_building_pinecone_hut",						--- 松果小屋
+		"botanical_cube_building_caladium",--------彩叶芋
+		"botanical_cube_building_bromeliad",--------积水凤梨
+		"botanical_cube_building_paling",--------篱笆
+		"botanical_cube_building_archway",--------拱门装饰
+		"botanical_cube_building_flowers",--------花球\
+		"botanical_cube_building_arrowroot",--------竹芋
+		"botanical_cube_building_hanging_plant",--------仙洞垂吊
+		"botanical_cube_building_monstera_hole",--------仙洞龟背竹
+		"botanical_cube_building_happy_leaf",------快乐叶子
+		"botanical_cube_building_cissusdiscolor",--------锦叶葡萄
+		"botanical_cube_building_leaf_carpet",-------叶片地毯
+		"botanical_cube_building_platycerium",-------鹿角蕨
+		"botanical_cube_building_rocking_chair",-------摇摇椅
+		"botanical_cube_building_show_shelf",-------展示架
+		"botanical_cube_building_begonia",-------秋海棠
+		"botanical_cube_building_myster_carpet",-------神秘地毯
+		"botanical_cube_building_monstera",-------龟背竹
+		
+
+
+
+
 
 		
 

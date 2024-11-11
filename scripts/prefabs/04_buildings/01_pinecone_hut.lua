@@ -153,7 +153,7 @@ local function fn()
     inst:AddTag("structure")
 
     inst:AddTag("engineering")
-
+    inst:AddTag("NOBLOCK")
     -- inst:AddTag("engineeringbatterypowered") 
 
     inst:AddTag("botanical_cube_building_pinecone_hut")

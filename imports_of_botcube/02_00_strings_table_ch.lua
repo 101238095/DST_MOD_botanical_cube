@@ -20,7 +20,11 @@ local strings = {
         --     ["inspect_str"] = "先天期突破到筑基期使用",
         --     ["recipe_desc"] = "先天期突破到筑基期使用",
         -- },
-
+     ["botanical_cube_building_paling_item"] = {
+            ["name"] = "篱笆",
+            ["inspect_str"] = "增加一点田园风情",
+            ["recipe_desc"] = "精美又费劲",
+        },
     --------------------------------------------------------------------
     --- 04_buildings
     ["botanical_cube_building_pinecone_hut"] = {
@@ -28,7 +32,121 @@ local strings = {
             ["inspect_str"] = "松果制作而成的小屋",
             ["recipe_desc"] = "可以在这个小屋里面睡觉",
         },
+    ["botanical_cube_building_caladium"] = {
+            ["name"] = "彩叶芋",
+            ["inspect_str"] = "美丽的叶子",
+            ["recipe_desc"] = "令人惊叹的叶片",
+        },
+    ["botanical_cube_building_bromeliad"] = {
+            ["name"] = "积水凤梨",
+            ["inspect_str"] = "像花一样",
+            ["recipe_desc"] = "进的都是水",
+        },
+    ["botanical_cube_building_paling"] = {
+            ["name"] = "篱笆墙",
+            ["inspect_str"] = "增加一点田园风情",
+            ["recipe_desc"] = "精美又费劲",
+        },
+    ["botanical_cube_building_archway"] = {
+            ["name"] = "拱门装饰",
+            ["inspect_str"] = "我需要一个装饰门",
+            ["recipe_desc"] = "太漂亮了",
+        },
+
+    ["botanical_cube_building_flowers"] = {
+            ["name"] = "花球",
+            ["inspect_str"] = "一簇一簇的",
+            ["recipe_desc"] = "用树枝升级",
+        },
+
+    ["botanical_cube_building_arrowroot"] = {
+            ["name"] = "竹芋",
+            ["inspect_str"] = "奇怪的花纹",
+            ["recipe_desc"] = "用树枝升级",
+        },
+    ["botanical_cube_building_hanging_plant"] = {
+            ["name"] = "仙洞垂吊",
+            ["inspect_str"] = "这是被虫啃的？",
+            ["recipe_desc"] = "一个洞一个洞的",
+        },
+    ["botanical_cube_building_monstera_hole"] = {
+            ["name"] = "仙洞龟背竹",
+            ["inspect_str"] = "一个一个窟窿",
+            ["recipe_desc"] = "令人惊叹的叶片",
+        },
+    ["botanical_cube_building_happy_leaf"] = {
+            ["name"] = "快乐叶子",
+            ["inspect_str"] = "油画一般的花纹",
+            ["recipe_desc"] = "好看爱看",
+        },
+    ["botanical_cube_building_cissusdiscolor"] = {
+            ["name"] = "锦叶葡萄",
+            ["inspect_str"] = "美丽的纹路",
+            ["recipe_desc"] = "好多叶片",
+        },
+
+    ["botanical_cube_building_monstera"] = {
+            ["name"] = "龟背竹",
+            ["inspect_str"] = "开洞了",
+            ["recipe_desc"] = "开洞了",
+        },
+
+    ["botanical_cube_building_platycerium"] = {
+            ["name"] = "鹿角蕨",
+            ["inspect_str"] = "像鹿角一样",
+            ["recipe_desc"] = "像鹿角一样",
+        },
+
+   ["botanical_cube_building_rocking_chair"] = {
+            ["name"] = "摇摇椅",
+            ["inspect_str"] = "摇啊摇",
+            ["recipe_desc"] = "摇啊摇",
+        },
+
+        ["botanical_cube_building_show_shelf"] = {
+            ["name"] = "展示架",
+            ["inspect_str"] = "展示我的战绩",
+            ["recipe_desc"] = "展示我的战绩",
+        },
+        ["botanical_cube_building_begonia"] = {
+            ["name"] = "秋海棠",
+            ["inspect_str"] = "千变万化",
+            ["recipe_desc"] = "美丽又多变",
+        },
+
+        ["botanical_cube_building_leaf_carpet"] = {
+            ["name"] = "叶片地毯",
+            ["inspect_str"] = "我喜欢厚厚的地毯",
+            ["recipe_desc"] = "用牛毛升级地毯",
+        },
+
+        ["botanical_cube_building_myster_carpet"] = {
+            ["name"] = "神秘地毯",
+            ["inspect_str"] = "优雅又高贵",
+            ["recipe_desc"] = "真难打理",
+        },
+
 }
+STRINGS.SKIN_NAMES.botanical_cube_building_flowers_blue = "蓝色花球"
+STRINGS.SKIN_NAMES.botanical_cube_building_flowers_darkgreen = "深绿花球"
+STRINGS.SKIN_NAMES.botanical_cube_building_flowers_red = "红色花球"
+STRINGS.SKIN_NAMES.botanical_cube_building_flowers_orange = "橙色花球"
+STRINGS.SKIN_NAMES.botanical_cube_building_flowers_purple = "紫色花球"
+STRINGS.SKIN_NAMES.botanical_cube_building_flowers_pink = "粉色花球"
+STRINGS.SKIN_NAMES.botanical_cube_building_flowers_yellow = "黄色花球"
+
+STRINGS.SKIN_NAMES.botanical_cube_building_arrowroot_yellow = "黄色竹芋"
+
+STRINGS.SKIN_NAMES.botanical_cube_building_happy_leafr = "矮的快乐叶子1"
+STRINGS.SKIN_NAMES.botanical_cube_building_happy_leafl = "矮的快乐叶子2"
+
+STRINGS.SKIN_NAMES.botanical_cube_building_leaf_carpet_blue = "蓝色"
+STRINGS.SKIN_NAMES.botanical_cube_building_leaf_carpet_purple = "紫色"
+STRINGS.SKIN_NAMES.botanical_cube_building_leaf_carpet_red = "红色"
+STRINGS.SKIN_NAMES.botanical_cube_building_leaf_carpet_orange = "橙色"
+STRINGS.SKIN_NAMES.botanical_cube_building_leaf_carpet_darkgreen = "深绿"
+
+STRINGS.SKIN_NAMES.botanical_cube_building_myster_carpet_darkgreen = "深绿"
 
 TUNING.BOTCUBE_GET_STRINGS = function(prefab_name1,prefab_name2)
     local prefab_name = "nil"

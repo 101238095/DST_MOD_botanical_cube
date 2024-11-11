@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="r7">
+    <folder id="0">
+        <file id="0" name="et_build_11.png" width="1119" height="1165" pivot_x="0.5" pivot_y="0"/>
+    </folder>
+    <entity id="0" name="botanical_cube_building_pinecone_hut">
+        <animation id="0" name="idle" length="1000" interval="100">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="et_build_11">
+                <key id="0" spin="0">
+                    <object folder="0" file="0" y="-50" angle="0"/>
+                </key>
+            </timeline>
+        </animation>
+        <animation id="1" name="place" length="100" interval="100">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                </key>
+                <key id="1" time="50">
+                    <object_ref id="0" timeline="0" key="1" z_index="0"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="et_build_11_001">
+                <key id="0" spin="0">
+                    <object folder="0" file="0" y="-50" angle="0"/>
+                </key>
+                <key id="1" time="50" spin="0">
+                    <object folder="0" file="0" y="-50.127351" angle="0" scale_y="0.745299"/>
+                </key>
+            </timeline>
+        </animation>
+        <animation id="2" name="hit" length="100" interval="100">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                </key>
+                <key id="1" time="50">
+                    <object_ref id="0" timeline="0" key="1" z_index="0"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="et_build_11_000">
+                <key id="0" spin="0">
+                    <object folder="0" file="0" y="-50" angle="0"/>
+                </key>
+                <key id="1" time="50" spin="0">
+                    <object folder="0" file="0" y="-50.100351" angle="0" scale_y="0.799298"/>
+                </key>
+            </timeline>
+        </animation>
+    </entity>
+</spriter_data>
