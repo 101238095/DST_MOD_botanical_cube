@@ -34,7 +34,7 @@ AddRecipe2(
         atlas = "images/map_icons/botanical_cube_building_pinecone_hut.xml",
         image = "botanical_cube_building_pinecone_hut.tex",
     },
-    {"MODS"}
+    {"MODS","Botanical_Cube"}
 )
 -- RemoveRecipeFromFilter("fwd_in_pdt_building_paddy_windmill","MODS")                       -- -- 在【模组物品】标签里移除这个。
 
