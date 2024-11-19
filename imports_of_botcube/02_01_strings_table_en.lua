@@ -27,10 +27,7 @@ local strings = {
         ["inspect_str"] = "Cabin made of pine cones",
         ["recipe_desc"] = "We can sleep in it",
     },
-    -- UI
-    ["botanical_cube_ui_craftingmenu"] = {        ---- 制作栏
-                ["Botanical_Cube"] = "Botanical Cube"
-            },
+
 
 
 
