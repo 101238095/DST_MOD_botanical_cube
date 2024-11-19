@@ -149,6 +149,10 @@ local strings = {
             ["inspect_str"] = "圣诞快乐！",
             ["recipe_desc"] = "增加节日氛围",
         },
+        -- UI
+        ["botanical_cube_ui_craftingmenu"] = {        ---- 制作栏
+                ["Botanical_Cube"] = "植物魔方"
+            },
 
 }
 STRINGS.SKIN_NAMES.botanical_cube_building_flowers_blue = "蓝色花球"
