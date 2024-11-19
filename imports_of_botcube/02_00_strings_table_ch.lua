@@ -126,6 +126,30 @@ local strings = {
             ["recipe_desc"] = "真难打理",
         },
 
+        ["botanical_cube_building_daisy"] = {
+            ["name"] = "雏菊盆栽",
+            ["inspect_str"] = "可爱的小雏菊",
+            ["recipe_desc"] = "需要很多花瓣",
+        },
+
+        ["botanical_cube_building_gesneriaceae"] = {
+            ["name"] = "苦苣苔",
+            ["inspect_str"] = "像花又像叶",
+            ["recipe_desc"] = "颜色多样",
+        },
+
+        ["botanical_cube_building_lilies"] = {
+            ["name"] = "百合花盆栽",
+            ["inspect_str"] = "这是小仙女吗",
+            ["recipe_desc"] = "花花",
+        },
+
+        ["botanical_cube_building_garland"] = {
+            ["name"] = "圣诞花环",
+            ["inspect_str"] = "圣诞快乐！",
+            ["recipe_desc"] = "增加节日氛围",
+        },
+
 }
 STRINGS.SKIN_NAMES.botanical_cube_building_flowers_blue = "蓝色花球"
 STRINGS.SKIN_NAMES.botanical_cube_building_flowers_darkgreen = "深绿花球"
@@ -147,6 +171,21 @@ STRINGS.SKIN_NAMES.botanical_cube_building_leaf_carpet_orange = "橙色"
 STRINGS.SKIN_NAMES.botanical_cube_building_leaf_carpet_darkgreen = "深绿"
 
 STRINGS.SKIN_NAMES.botanical_cube_building_myster_carpet_darkgreen = "深绿"
+
+STRINGS.SKIN_NAMES.botanical_cube_building_daisy_green = "绿色雏菊"
+STRINGS.SKIN_NAMES.botanical_cube_building_daisy_purple = "紫色雏菊"
+
+STRINGS.SKIN_NAMES.botanical_cube_building_gesneriaceae_blue = "蓝色苦苣苔"
+STRINGS.SKIN_NAMES.botanical_cube_building_gesneriaceae_darkgreen = "蓝绿苦苣苔"
+STRINGS.SKIN_NAMES.botanical_cube_building_gesneriaceae_green = "绿色苦苣苔"
+STRINGS.SKIN_NAMES.botanical_cube_building_gesneriaceae_purple = "紫色苦苣苔"
+STRINGS.SKIN_NAMES.botanical_cube_building_gesneriaceae_pink = "粉色苦苣苔"
+STRINGS.SKIN_NAMES.botanical_cube_building_gesneriaceae_yellow = "黄色苦苣苔"
+
+STRINGS.SKIN_NAMES.botanical_cube_building_lilies_green = "绿色百合花"
+STRINGS.SKIN_NAMES.botanical_cube_building_lilies_purple = "紫色百合花"
+STRINGS.SKIN_NAMES.botanical_cube_building_lilies_pink = "粉色百合花"
+STRINGS.SKIN_NAMES.botanical_cube_building_lilies_yellow = "黄色百合花"
 
 TUNING.BOTCUBE_GET_STRINGS = function(prefab_name1,prefab_name2)
     local prefab_name = "nil"

@@ -34,6 +34,10 @@ local files_name = {
 		"botanical_cube_building_begonia",-------秋海棠
 		"botanical_cube_building_myster_carpet",-------神秘地毯
 		"botanical_cube_building_monstera",-------龟背竹
+		"botanical_cube_building_daisy",-------雏菊
+		"botanical_cube_building_gesneriaceae",-------苦苣苔
+		"botanical_cube_building_lilies",-------百合花
+		"botanical_cube_building_garland",-------花环
 		
 
 

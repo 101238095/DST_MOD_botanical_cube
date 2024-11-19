@@ -232,6 +232,174 @@ AddSkin("botanical_cube_building_myster_carpet", "botanical_cube_building_myster
     end
 
 })
+
+AddSkin("botanical_cube_building_daisy", "botanical_cube_building_daisy_purple", {
+    type = "base",                                         --类型，base就行
+    rarity = "Elegant",                                    --稀有度，会给皮肤字体加不同颜色
+    init_fn = function(inst)                               --皮肤初始化函数
+        inst.AnimState:SetBank("botanical_cube_building_daisy_purple")--设置bank
+        inst.AnimState:SetBuild("botanical_cube_building_daisy_purple")--设置build
+    end,
+    clear_fn = function(inst)                              --不再使用该皮肤时
+        inst.AnimState:SetBank("botanical_cube_building_daisy")--设置bank
+        inst.AnimState:SetBuild("botanical_cube_building_daisy")--设置build
+    end
+
+})
+
+AddSkin("botanical_cube_building_daisy", "botanical_cube_building_daisy_green", {
+    type = "base",                                         --类型，base就行
+    rarity = "Elegant",                                    --稀有度，会给皮肤字体加不同颜色
+    init_fn = function(inst)                               --皮肤初始化函数
+        inst.AnimState:SetBank("botanical_cube_building_daisy_green")--设置bank
+        inst.AnimState:SetBuild("botanical_cube_building_daisy_green")--设置build
+    end,
+    clear_fn = function(inst)                              --不再使用该皮肤时
+        inst.AnimState:SetBank("botanical_cube_building_daisy")--设置bank
+        inst.AnimState:SetBuild("botanical_cube_building_daisy")--设置build
+    end
+
+})
+
+AddSkin("botanical_cube_building_gesneriaceae", "botanical_cube_building_gesneriaceae_blue", {
+    type = "base",                                         --类型，base就行
+    rarity = "Elegant",                                    --稀有度，会给皮肤字体加不同颜色
+    init_fn = function(inst)                               --皮肤初始化函数
+        inst.AnimState:SetBank("botanical_cube_building_gesneriaceae_blue")--设置bank
+        inst.AnimState:SetBuild("botanical_cube_building_gesneriaceae_blue")--设置build
+    end,
+    clear_fn = function(inst)                              --不再使用该皮肤时
+        inst.AnimState:SetBank("botanical_cube_building_gesneriaceae")--设置bank
+        inst.AnimState:SetBuild("botanical_cube_building_gesneriaceae")--设置build
+    end
+
+})
+
+AddSkin("botanical_cube_building_gesneriaceae", "botanical_cube_building_gesneriaceae_darkgreen", {
+    type = "base",                                         --类型，base就行
+    rarity = "Elegant",                                    --稀有度，会给皮肤字体加不同颜色
+    init_fn = function(inst)                               --皮肤初始化函数
+        inst.AnimState:SetBank("botanical_cube_building_gesneriaceae_darkgreen")--设置bank
+        inst.AnimState:SetBuild("botanical_cube_building_gesneriaceae_darkgreen")--设置build
+    end,
+    clear_fn = function(inst)                              --不再使用该皮肤时
+        inst.AnimState:SetBank("botanical_cube_building_gesneriaceae")--设置bank
+        inst.AnimState:SetBuild("botanical_cube_building_gesneriaceae")--设置build
+    end
+
+})
+
+AddSkin("botanical_cube_building_gesneriaceae", "botanical_cube_building_gesneriaceae_green", {
+    type = "base",                                         --类型，base就行
+    rarity = "Elegant",                                    --稀有度，会给皮肤字体加不同颜色
+    init_fn = function(inst)                               --皮肤初始化函数
+        inst.AnimState:SetBank("botanical_cube_building_gesneriaceae_green")--设置bank
+        inst.AnimState:SetBuild("botanical_cube_building_gesneriaceae_green")--设置build
+    end,
+    clear_fn = function(inst)                              --不再使用该皮肤时
+        inst.AnimState:SetBank("botanical_cube_building_gesneriaceae")--设置bank
+        inst.AnimState:SetBuild("botanical_cube_building_gesneriaceae")--设置build
+    end
+
+})
+
+AddSkin("botanical_cube_building_gesneriaceae", "botanical_cube_building_gesneriaceae_pink", {
+    type = "base",                                         --类型，base就行
+    rarity = "Elegant",                                    --稀有度，会给皮肤字体加不同颜色
+    init_fn = function(inst)                               --皮肤初始化函数
+        inst.AnimState:SetBank("botanical_cube_building_gesneriaceae_pink")--设置bank
+        inst.AnimState:SetBuild("botanical_cube_building_gesneriaceae_pink")--设置build
+    end,
+    clear_fn = function(inst)                              --不再使用该皮肤时
+        inst.AnimState:SetBank("botanical_cube_building_gesneriaceae")--设置bank
+        inst.AnimState:SetBuild("botanical_cube_building_gesneriaceae")--设置build
+    end
+
+})
+
+AddSkin("botanical_cube_building_gesneriaceae", "botanical_cube_building_gesneriaceae_yellow", {
+    type = "base",                                         --类型，base就行
+    rarity = "Elegant",                                    --稀有度，会给皮肤字体加不同颜色
+    init_fn = function(inst)                               --皮肤初始化函数
+        inst.AnimState:SetBank("botanical_cube_building_gesneriaceae_yellow")--设置bank
+        inst.AnimState:SetBuild("botanical_cube_building_gesneriaceae_yellow")--设置build
+    end,
+    clear_fn = function(inst)                              --不再使用该皮肤时
+        inst.AnimState:SetBank("botanical_cube_building_gesneriaceae")--设置bank
+        inst.AnimState:SetBuild("botanical_cube_building_gesneriaceae")--设置build
+    end
+
+})
+
+AddSkin("botanical_cube_building_gesneriaceae", "botanical_cube_building_gesneriaceae_purple", {
+    type = "base",                                         --类型，base就行
+    rarity = "Elegant",                                    --稀有度，会给皮肤字体加不同颜色
+    init_fn = function(inst)                               --皮肤初始化函数
+        inst.AnimState:SetBank("botanical_cube_building_gesneriaceae_purple")--设置bank
+        inst.AnimState:SetBuild("botanical_cube_building_gesneriaceae_purple")--设置build
+    end,
+    clear_fn = function(inst)                              --不再使用该皮肤时
+        inst.AnimState:SetBank("botanical_cube_building_gesneriaceae")--设置bank
+        inst.AnimState:SetBuild("botanical_cube_building_gesneriaceae")--设置build
+    end
+
+})
+
+AddSkin("botanical_cube_building_lilies", "botanical_cube_building_lilies_green", {
+    type = "base",                                         --类型，base就行
+    rarity = "Elegant",                                    --稀有度，会给皮肤字体加不同颜色
+    init_fn = function(inst)                               --皮肤初始化函数
+        inst.AnimState:SetBank("botanical_cube_building_lilies_green")--设置bank
+        inst.AnimState:SetBuild("botanical_cube_building_lilies_green")--设置build
+    end,
+    clear_fn = function(inst)                              --不再使用该皮肤时
+        inst.AnimState:SetBank("botanical_cube_building_lilies")--设置bank
+        inst.AnimState:SetBuild("botanical_cube_building_lilies")--设置build
+    end
+
+})
+
+AddSkin("botanical_cube_building_lilies", "botanical_cube_building_lilies_pink", {
+    type = "base",                                         --类型，base就行
+    rarity = "Elegant",                                    --稀有度，会给皮肤字体加不同颜色
+    init_fn = function(inst)                               --皮肤初始化函数
+        inst.AnimState:SetBank("botanical_cube_building_lilies_pink")--设置bank
+        inst.AnimState:SetBuild("botanical_cube_building_lilies_pink")--设置build
+    end,
+    clear_fn = function(inst)                              --不再使用该皮肤时
+        inst.AnimState:SetBank("botanical_cube_building_lilies")--设置bank
+        inst.AnimState:SetBuild("botanical_cube_building_lilies")--设置build
+    end
+
+})
+
+AddSkin("botanical_cube_building_lilies", "botanical_cube_building_lilies_yellow", {
+    type = "base",                                         --类型，base就行
+    rarity = "Elegant",                                    --稀有度，会给皮肤字体加不同颜色
+    init_fn = function(inst)                               --皮肤初始化函数
+        inst.AnimState:SetBank("botanical_cube_building_lilies_yellow")--设置bank
+        inst.AnimState:SetBuild("botanical_cube_building_lilies_yellow")--设置build
+    end,
+    clear_fn = function(inst)                              --不再使用该皮肤时
+        inst.AnimState:SetBank("botanical_cube_building_lilies")--设置bank
+        inst.AnimState:SetBuild("botanical_cube_building_lilies")--设置build
+    end
+
+})
+
+AddSkin("botanical_cube_building_lilies", "botanical_cube_building_lilies_purple", {
+    type = "base",                                         --类型，base就行
+    rarity = "Elegant",                                    --稀有度，会给皮肤字体加不同颜色
+    init_fn = function(inst)                               --皮肤初始化函数
+        inst.AnimState:SetBank("botanical_cube_building_lilies_purple")--设置bank
+        inst.AnimState:SetBuild("botanical_cube_building_lilies_purple")--设置build
+    end,
+    clear_fn = function(inst)                              --不再使用该皮肤时
+        inst.AnimState:SetBank("botanical_cube_building_lilies")--设置bank
+        inst.AnimState:SetBuild("botanical_cube_building_lilies")--设置build
+    end
+
+})
 ----------------------------------------------------------------------------------------------------
 
 for _, skins in pairs(SKINS) do

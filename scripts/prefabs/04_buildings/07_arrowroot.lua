@@ -41,7 +41,7 @@ local assets =
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     local function OnLevelChange(inst, current, data)
-    local scale = 1 + current * 0.2
+    local scale = 1 - current * 0.2
     inst.Transform:SetScale(scale, scale, scale)
     end
 
@@ -85,7 +85,7 @@ local function fn()
     -----------------------------------------------------------
     inst:AddComponent("botanical_cube_upgrade")
     inst.components.botanical_cube_upgrade.item = "twigs" --用牛毛升级
-    inst.components.botanical_cube_upgrade.max = 5              --最多可以给予5个
+    inst.components.botanical_cube_upgrade.max = 4              --最多可以给予5个
     inst.components.botanical_cube_upgrade.onlevelchange = OnLevelChange
     
     -----------------------------------------------------------

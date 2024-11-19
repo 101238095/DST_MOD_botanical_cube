@@ -254,3 +254,59 @@ AddRecipe2(
     },
     {"MODS"}
 )
+
+AddRecipeToFilter("botanical_cube_building_daisy","STRUCTURES")     ---- 添加物品到目标标签
+AddRecipe2(
+    "botanical_cube_building_daisy",            --  --  inst.prefab  实体名字，雏菊
+    { Ingredient("twigs", 2),Ingredient("petals", 3),Ingredient("cutgrass", 3) }, 
+    TECH.SCIENCE_TWO, --- TECH.二本科技
+    {
+        no_deconstruction=false,
+        placer = "botanical_cube_building_daisy_placer",                       -------- 建筑放置器        
+        atlas = "images/map_icons/botanical_cube_building_daisy.xml",
+        image = "botanical_cube_building_daisy.tex",
+    },
+    {"MODS"}
+)
+
+AddRecipeToFilter("botanical_cube_building_gesneriaceae","STRUCTURES")     ---- 添加物品到目标标签
+AddRecipe2(
+    "botanical_cube_building_gesneriaceae",            --  --  inst.prefab  实体名字，苦苣苔
+    { Ingredient("twigs", 2),Ingredient("petals", 3),Ingredient("cutgrass", 3) }, 
+    TECH.SCIENCE_TWO, --- TECH.二本科技
+    {
+        no_deconstruction=false,
+        placer = "botanical_cube_building_gesneriaceae_placer",                       -------- 建筑放置器        
+        atlas = "images/map_icons/botanical_cube_building_gesneriaceae.xml",
+        image = "botanical_cube_building_gesneriaceae.tex",
+    },
+    {"MODS"}
+)
+
+AddRecipeToFilter("botanical_cube_building_lilies","STRUCTURES")     ---- 添加物品到目标标签
+AddRecipe2(
+    "botanical_cube_building_lilies",            --  --  inst.prefab  实体名字，百合花
+    { Ingredient("twigs", 2),Ingredient("petals", 3),Ingredient("cutgrass", 3) }, 
+    TECH.SCIENCE_TWO, --- TECH.二本科技
+    {
+        no_deconstruction=false,
+        placer = "botanical_cube_building_lilies_placer",                       -------- 建筑放置器        
+        atlas = "images/map_icons/botanical_cube_building_lilies.xml",
+        image = "botanical_cube_building_lilies.tex",
+    },
+    {"MODS"}
+)
+
+AddRecipeToFilter("botanical_cube_building_garland","STRUCTURES")     ---- 添加物品到目标标签
+AddRecipe2(
+    "botanical_cube_building_garland",            --  --  inst.prefab  实体名字，花环
+    { Ingredient("twigs", 2),Ingredient("petals", 3),Ingredient("cutgrass", 3) }, 
+    TECH.SCIENCE_TWO, --- TECH.二本科技
+    {
+        no_deconstruction=false,
+        placer = "botanical_cube_building_garland_placer",                       -------- 建筑放置器        
+        atlas = "images/map_icons/botanical_cube_building_garland.xml",
+        image = "botanical_cube_building_garland.tex",
+    },
+    {"MODS"}
+)

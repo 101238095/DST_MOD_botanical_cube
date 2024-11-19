@@ -18,7 +18,7 @@ local assets =
         inst:AddComponent("workable")
         inst.components.workable:SetWorkAction(ACTIONS.DIG) -- 是松果做的用铲子挖掘就行了
 
-        inst.components.workable:SetWorkLeft(6)
+        inst.components.workable:SetWorkLeft(3)
 
         inst.components.workable:SetOnFinishCallback(OnFinishCallback)
 

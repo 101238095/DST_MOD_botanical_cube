@@ -44,6 +44,10 @@ local prefabs_name_list = {
     "16_begonia",--秋海棠
     "17_leaf_carpet",--叶片地毯
     "18_myster_carpet",--神秘地毯
+    "19_daisy",--雏菊
+    "20_gesneriaceae",--苦苣苔
+    "21_lilies",--百合花
+    "22_garland",--花环
 }
 
 

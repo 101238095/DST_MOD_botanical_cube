@@ -101,7 +101,7 @@ local function fn()
         workable_install(inst)
         inst:ListenForEvent("onbuilt",function()  -- 玩家刚刚建立的时候 可以用来播放动画和声音
             -- inst.SoundEmitter:PlaySound("dontstarve/common/chest_trap")
-            inst.AnimState:PlayAnimation("idle")
+            inst.AnimState:PlayAnimation("idle",true)
             -- inst.AnimState:PushAnimation("idle",true)
         
         end)
