@@ -57,7 +57,7 @@ local function fn()
     inst.entity:AddNetwork()
 
     MakeObstaclePhysics(inst, 1)
-
+    inst:SetDeploySmartRadius(0.45)
 
     --inst.MiniMapEntity:SetIcon("botanical_cube_building_gesneriaceae.tex")
 
@@ -84,7 +84,7 @@ local function fn()
     end
     -----------------------------------------------------------
     inst:AddComponent("botanical_cube_upgrade")
-    inst.components.botanical_cube_upgrade.item = "twigs" --用树枝升级
+    inst.components.botanical_cube_upgrade.item = "botanical_cube_building_upgradeitem" --用树枝升级
     inst.components.botanical_cube_upgrade.max = 4              --最多可以给予10个
     inst.components.botanical_cube_upgrade.onlevelchange = OnLevelChange
     -----------------------------------------------------------

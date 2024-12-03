@@ -56,13 +56,13 @@ local strings = {
     ["botanical_cube_building_flowers"] = {
             ["name"] = "花球",
             ["inspect_str"] = "一簇一簇的",
-            ["recipe_desc"] = "用树枝升级",
+            ["recipe_desc"] = "升级球升级变大变高",
         },
 
     ["botanical_cube_building_arrowroot"] = {
             ["name"] = "竹芋",
             ["inspect_str"] = "奇怪的花纹",
-            ["recipe_desc"] = "用树枝升级",
+            ["recipe_desc"] = "升级球升级后变小",
         },
     ["botanical_cube_building_hanging_plant"] = {
             ["name"] = "仙洞垂吊",
@@ -150,6 +150,37 @@ local strings = {
             ["recipe_desc"] = "增加节日氛围",
         },
 
+        ["botanical_cube_building_butterflybox"] = {
+            ["name"] = "荧光箱",
+            ["inspect_str"] = "再也不用为了几个荧光果去地下了",
+            ["recipe_desc"] = "荧光果的可持续发展道路",
+        },
+
+        ["botanical_cube_building_lilybush"] = {
+            ["name"] = "百合花丛",
+            ["inspect_str"] = "可以给我很多花瓣吗",
+            ["recipe_desc"] = "花瓣的可持续发展",
+        },
+
+        ["botanical_cube_others_glowworm"] = {
+            ["name"] = "荧光飞虫",
+            ["inspect_str"] = "荧光果的可持续发展道路",
+        },
+
+        ["botanical_cube_building_upgradeitem"] = {
+            ["name"] = "升级球",
+            ["inspect_str"] = "让物体升级变大",
+        },
+
+       --[[ ["botanical_cube_building_pumpkin"] = {
+            ["name"] = "南瓜装饰灯",
+            ["inspect_str"] = "万圣节的氛围拉满辣",
+        },--]]
+        ["botanical_cube_building_chest"] = {
+            ["name"] = "花箱",
+            ["inspect_str"] = "大箱子",
+        },
+
 }
 STRINGS.SKIN_NAMES.botanical_cube_building_flowers_blue = "蓝色花球"
 STRINGS.SKIN_NAMES.botanical_cube_building_flowers_darkgreen = "深绿花球"
@@ -158,6 +189,9 @@ STRINGS.SKIN_NAMES.botanical_cube_building_flowers_orange = "橙色花球"
 STRINGS.SKIN_NAMES.botanical_cube_building_flowers_purple = "紫色花球"
 STRINGS.SKIN_NAMES.botanical_cube_building_flowers_pink = "粉色花球"
 STRINGS.SKIN_NAMES.botanical_cube_building_flowers_yellow = "黄色花球"
+STRINGS.SKIN_NAMES.botanical_cube_building_flowers_blue2 = "蓝色花球2"
+STRINGS.SKIN_NAMES.botanical_cube_building_flowers_white = "白色花球"
+STRINGS.SKIN_NAMES.botanical_cube_building_flowers_white2 = "白色花球2"
 
 STRINGS.SKIN_NAMES.botanical_cube_building_arrowroot_yellow = "黄色竹芋"
 
@@ -171,6 +205,8 @@ STRINGS.SKIN_NAMES.botanical_cube_building_leaf_carpet_orange = "橙色"
 STRINGS.SKIN_NAMES.botanical_cube_building_leaf_carpet_darkgreen = "深绿"
 
 STRINGS.SKIN_NAMES.botanical_cube_building_myster_carpet_darkgreen = "深绿"
+STRINGS.SKIN_NAMES.botanical_cube_building_myster_carpet_marry = "圣诞快乐！"
+
 
 STRINGS.SKIN_NAMES.botanical_cube_building_daisy_green = "绿色雏菊"
 STRINGS.SKIN_NAMES.botanical_cube_building_daisy_purple = "紫色雏菊"

@@ -352,7 +352,7 @@ local function keeptargetfn()
 end
 
 local function onhammered(inst)
-    inst.components.lootdropper:DropLoot()
+    inst.components.lootdropper:DropLoot()--掉落物
 
     local fx = SpawnPrefab("collapse_small")
     fx.Transform:SetPosition(inst.Transform:GetWorldPosition())
@@ -731,7 +731,7 @@ local function MakeWall(name, anims, isdoor, klaussackkeyid, data)
             inst:ListenForEvent("death", onhammered)
 
             inst:AddComponent("botanical_cube_upgrade")
-            inst.components.botanical_cube_upgrade.item = "twigs" --用松果升级
+            inst.components.botanical_cube_upgrade.item = "botanical_cube_building_upgradeitem" --用松果升级
             inst.components.botanical_cube_upgrade.max = 5              --最多可以给予5个
             inst.components.botanical_cube_upgrade.onlevelchange = OnLevelChange
           
@@ -777,7 +777,7 @@ local function MakeWall(name, anims, isdoor, klaussackkeyid, data)
 end
 
 -------------------------------------------------------------------------------
-local function MakeWallAnim(name, anims, isdoor)
+local function MakeWallAnim(name, anims, isdoor)--制作墙的动画
     local assets =
     {
         Asset("ANIM", "anim/"..anims.wide..".zip"),

@@ -677,7 +677,7 @@ local function MakeWall(name, anims, isdoor, klaussackkeyid, data)
         end
 
         inst:AddComponent("botanical_cube_upgrade")
-        inst.components.botanical_cube_upgrade.item = "twigs" --用松果升级
+        inst.components.botanical_cube_upgrade.item = "botanical_cube_building_upgradeitem" --用松果升级
         inst.components.botanical_cube_upgrade.max = 5              --最多可以给予5个
         inst.components.botanical_cube_upgrade.onlevelchange = OnLevelChange
         
@@ -869,7 +869,7 @@ local function MakeInvItem(name, placement, animdata, isdoor)
         inst.entity:AddNetwork()
 
         MakeInventoryPhysics(inst)
-
+        inst:SetDeploySmartRadius(0.45)
         inst:AddTag(isdoor and "gatebuilder" or "fencebuilder")
 
         inst.AnimState:SetBank(animdata)
@@ -960,23 +960,6 @@ end
 
 
 return MakeWall("botanical_cube_building_archway", {wide="botanical_cube_building_archway", narrow="botanical_cube_building_archway_thin"}, false),
-    MakeInvItem("botanical_cube_building_archway_item", "botanical_cube_building_archway", "botanical_cube_building_archway", false),
-    MakeWallPlacer("botanical_cube_building_archway_item_placer", "botanical_cube_building_archway", {wide="botanical_cube_building_archway", narrow="botanical_cube_building_archway_thin"}, false),
-    MakeWall("fence_gate", {wide="fence_gate", narrow="fence_gate_thin"}, true),
-    MakeWallAnim("fence_gate_anim", {wide="fence_gate", narrow="fence_gate_thin"}, true),
-    MakeInvItem("fence_gate_item", "fence_gate", "fence_gate", true),
-    MakeWallPlacer("fence_gate_item_placer", "fence_gate", {wide="fence_gate", narrow="fence_gate_thin"}, true),
-
-    MakeWall("quagmire_park_gate", {wide="quagmire_park_gate"}, true, "gate_key"),
-    MakeWallAnim("quagmire_park_gate_anim", {wide="quagmire_park_gate"}, true),
-
-	MakeWall("fence_junk", {wide="fence_junk", narrow="fence_thin_junk", build="fence_junk_build"}, false, nil,
-		{
-			num_builds = 3,
-			loot_table = "fence_junk",
-			tag = "junk_fence",
-			onworkfinishedfn = junk_onworkfinishedfn,
-			onworkfn = junk_onworkfn,
-			workmultiplierfn = junk_workmultiplierfn,
-            prefabs = {"junk_break_fx"},
-		})
+    --MakeInvItem("botanical_cube_building_archway_item", "botanical_cube_building_archway", "botanical_cube_building_archway", false),
+    MakeWallPlacer("botanical_cube_building_archway_item_placer", "botanical_cube_building_archway", {wide="botanical_cube_building_archway", narrow="botanical_cube_building_archway_thin"}, false)
+   

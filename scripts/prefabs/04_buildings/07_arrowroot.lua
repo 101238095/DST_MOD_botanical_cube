@@ -58,7 +58,7 @@ local function fn()
     inst.entity:AddNetwork()
 
     MakeObstaclePhysics(inst, 1)
-
+    inst:SetDeploySmartRadius(0.45)
 
     inst.MiniMapEntity:SetIcon("botanical_cube_building_arrowroot.tex")
 
@@ -84,7 +84,7 @@ local function fn()
     end
     -----------------------------------------------------------
     inst:AddComponent("botanical_cube_upgrade")
-    inst.components.botanical_cube_upgrade.item = "twigs" --用牛毛升级
+    inst.components.botanical_cube_upgrade.item = "botanical_cube_building_upgradeitem" --用牛毛升级
     inst.components.botanical_cube_upgrade.max = 4              --最多可以给予5个
     inst.components.botanical_cube_upgrade.onlevelchange = OnLevelChange
     
@@ -118,31 +118,7 @@ local function fn()
     return inst
 end
 
-----------------------------------------------------------------------------------------------------------------------
---- placer
-    -- local function CreatePlacerSpotlight()
-    --     local inst = CreateEntity()
 
-    --     --[[Non-networked entity]]
-    --     inst.entity:SetCanSleep(false)
-    --     inst.persists = false
-
-    --     inst.entity:AddTransform()
-    --     inst.entity:AddAnimState()
-
-    --     inst:AddTag("CLASSIFIED")
-    --     inst:AddTag("NOCLICK")
-    --     inst:AddTag("placer")
-
-    --     inst.Transform:SetTwoFaced()
-
-    --     inst.AnimState:SetBank("loramia_building_mysterious_creation")
-    --     inst.AnimState:SetBuild("loramia_building_mysterious_creation")
-    --     inst.AnimState:PlayAnimation("idle")
-    --     inst.AnimState:SetLightOverride(1)
-
-    --     return inst
-    -- end
     local function placer_postinit_fn(inst)
 
     end

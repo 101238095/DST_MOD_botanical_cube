@@ -140,7 +140,7 @@ local function fn()
     inst.entity:AddNetwork()
 
     MakeObstaclePhysics(inst, 1)
-
+    inst:SetDeploySmartRadius(0.45)
 
     inst.MiniMapEntity:SetIcon("botanical_cube_building_pinecone_hut.tex")
 

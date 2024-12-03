@@ -14,3 +14,5 @@ modimport("imports_of_botcube/03_strings_init.lua")
 modimport("imports_of_botcube/04_inventoryimages_icon_register.lua")  -- 物品图标
 
 modimport("imports_of_botcube/05_minimap_icon_register.lua")  -- 小地图图标
+
+modimport("imports_of_botcube/06_ui_images_register.lua")  -- UI图标

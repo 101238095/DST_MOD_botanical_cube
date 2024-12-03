@@ -26,6 +26,7 @@ local files_name = {
 	"botanical_cube_building_flowers_purple" ,
 	"botanical_cube_building_flowers_pink" ,
 	"botanical_cube_building_flowers_yellow" ,
+	"botanical_cube_building_upgradeitem" ,
 
 
 

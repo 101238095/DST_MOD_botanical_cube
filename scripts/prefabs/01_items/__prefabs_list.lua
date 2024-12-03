@@ -24,21 +24,20 @@ local temp_str_index2 = string.find(temp_addr,"/__prefabs_list.lua")
 local Prefabs_addr_base = string.sub(temp_addr,1,temp_str_index2) .. "/"    --- 得到最终文件夹路径
 
 ---------------------------------------------------------------------------
--- local Prefabs_addr_base = "scripts/prefabs/01_bogd_items/"               --- 文件夹路径
---[[local prefabs_name_list = {
-    "01_paling_item"
+--local Prefabs_addr_base = "scripts/prefabs/01_bogd_items/"               --- 文件夹路径
+local prefabs_name_list = {
+ 
 
 
 }
---]]
+
 
 ---------------------------------------------------------------------------
 ---- 正在测试的物品
 if TUNING.BOTCUBE_DEBUGGING_MODE == true then
     local debugging_name_list = {
 
-
-
+   
     }
     for k, temp in pairs(debugging_name_list) do
         table.insert(prefabs_name_list,temp)

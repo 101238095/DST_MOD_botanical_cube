@@ -41,7 +41,7 @@ local assets =
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     local function OnLevelChange(inst, current, data)
-    local scale = 1 + current * 0.2
+    local scale = 1 + current * 0.15
     inst.Transform:SetScale(scale, scale, scale)
     end
 
@@ -57,7 +57,7 @@ local function fn()
     inst.entity:AddNetwork()
 
     MakeObstaclePhysics(inst, 1)
-
+    inst:SetDeploySmartRadius(0.45)
 
     --inst.MiniMapEntity:SetIcon("botanical_cube_building_flowers.tex")
 
@@ -84,8 +84,8 @@ local function fn()
     end
     -----------------------------------------------------------
     inst:AddComponent("botanical_cube_upgrade")
-    inst.components.botanical_cube_upgrade.item = "twigs" --用树枝升级
-    inst.components.botanical_cube_upgrade.max = 10              --最多可以给予10个
+    inst.components.botanical_cube_upgrade.item = "botanical_cube_building_upgradeitem" --用树枝升级
+    inst.components.botanical_cube_upgrade.max = 18              --最多可以给予10个
     inst.components.botanical_cube_upgrade.onlevelchange = OnLevelChange
     -----------------------------------------------------------
     --- 
@@ -117,31 +117,7 @@ local function fn()
     return inst
 end
 
-----------------------------------------------------------------------------------------------------------------------
---- placer
-    -- local function CreatePlacerSpotlight()
-    --     local inst = CreateEntity()
 
-    --     --[[Non-networked entity]]
-    --     inst.entity:SetCanSleep(false)
-    --     inst.persists = false
-
-    --     inst.entity:AddTransform()
-    --     inst.entity:AddAnimState()
-
-    --     inst:AddTag("CLASSIFIED")
-    --     inst:AddTag("NOCLICK")
-    --     inst:AddTag("placer")
-
-    --     inst.Transform:SetTwoFaced()
-
-    --     inst.AnimState:SetBank("loramia_building_mysterious_creation")
-    --     inst.AnimState:SetBuild("loramia_building_mysterious_creation")
-    --     inst.AnimState:PlayAnimation("idle")
-    --     inst.AnimState:SetLightOverride(1)
-
-    --     return inst
-    -- end
     local function placer_postinit_fn(inst)
 
     end

@@ -38,6 +38,12 @@ local files_name = {
 		"botanical_cube_building_gesneriaceae",-------苦苣苔
 		"botanical_cube_building_lilies",-------百合花
 		"botanical_cube_building_garland",-------花环
+		"botanical_cube_building_butterflybox",-------蝴蝶箱
+		"botanical_cube_building_lilybush",-------百合灌木
+		"botanical_cube_building_upgradeitem",-------升级球
+       -- "botanical_cube_building_pumpkin",-------南瓜装饰灯
+		"botanical_cube_building_chest",-------花箱
+
 		
 
 
